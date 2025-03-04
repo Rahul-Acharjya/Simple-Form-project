@@ -1,0 +1,109 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(160, 173, 173);
+    /* position: relative; */
+}
+#centre{
+    height: 85%;
+    width: 30%;
+    background-color: rgba(245, 245, 245, 0.603);
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.499);
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.603);
+    
+}
+#content>form>h1{
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    /* border-bottom: 1px solid black; */
+    
+}
+#heading::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    bottom: 92%;
+    background-color: black;
+    left: 110px;
+}
+#heading:hover::after{
+
+    animation-name: anim;
+    animation-duration: 2s;
+   
+    
+}
+
+@keyframes anim {
+    0%{
+        left: 125px;
+        width: 0%;
+    }
+    60%{
+        left: 125px;
+        width: 40%;
+    }
+    /* 75%{
+        left: 300px;
+        width: 45%;
+    } */
+    100%{
+        left: 280px;
+        width: 0%;
+    }
+    
+}
+label{
+    position: absolute;
+    left: 5%;
+    padding-top: 10px;
+}
+input{ position: absolute;
+    left: 5%;
+    padding: 5px;
+    font-size: 13px;
+  margin-top: 10px
+}
+textarea{
+    position: absolute;
+    left: 5%;
+    margin-top: 10px;
+}
+#submit{
+    position: absolute;
+    top: 87%;
+   width: 90%;
+   /* background-color: rgba(25, 119, 163, 0.897); */
+   background: linear-gradient(to right,rgba(159, 46, 211, 0.753),blue,rgb(235, 15, 169));
+   color: antiquewhite;
+   font-size: 18px;
+   border: none;
+   border-radius: 20px;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+#submit:hover{
+    padding: 8px ;
+    margin-top: 3px;
+    color: rgba(9, 10, 12, 0.774);
+    font-weight: 600;
+ background: linear-gradient(to right,rgb(60, 60, 209),rgb(0, 0, 255,0.418), white,white,rgba(0, 0, 255, 0.418),rgb(60, 60, 209));
+}
